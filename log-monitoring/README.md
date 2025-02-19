@@ -8,7 +8,6 @@ This Python application reads a log file in CSV format, analyzes the log data, a
 ## Features
 - Reads and processes log data from a CSV file
 - Analyzes task execution times
-- Generates an output CSV file (`output.csv`) with categorized results
 
 ## Installation
 1. Clone this repository:
@@ -32,6 +31,16 @@ python main.py input_log.csv
 ```
 Replace `input_log.csv` with the actual log file you want to analyze.
 
+## Output
+Print out a result as
+```
+Total records: {number}
+Total error: {number}
+Total warning: {number}
+Total excaption: {number}
+Total start without stop: {number}
+```
+
 ## Run Test
 Run all tests
 ```bash
@@ -53,10 +62,6 @@ If you experince error `permission denied`, you can fix by run
 ```bash
 chmod +x ./docker.sh
 ```
-
-  ## Output
-The generated `output.csv` file will contain the analyzed results with task execution times classified as **error**, **warning**, or **normal**.
-
 
 ## How to build docker image
 
