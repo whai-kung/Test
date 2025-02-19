@@ -32,6 +32,10 @@ coverage.xml
 *.pycoverage
 *.hypothesis/
 
+# lint
+.dmypy.json
+.coveragerc
+
 # PyInstaller
 *.spec
 dist/

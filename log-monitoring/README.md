@@ -32,6 +32,22 @@ python main.py input_log.csv
 ```
 Replace `input_log.csv` with the actual log file you want to analyze.
 
+## Run Test
+Run all tests
+```bash
+pytest
+```
+
+Run a specific directory
+```bash
+pytest tests/
+```
+
+Run tests with coverage
+```bash
+pytest --cov
+```
+
 ## Troble shooting
 If you experince error `permission denied`, you can fix by run
 ```bash
