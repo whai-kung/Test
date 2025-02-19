@@ -1,0 +1,44 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry
+.poetry/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and database
+*.log
+*.sqlite3
+*.db
+*.sqlite
+
+# Unit test and coverage reports
+.coverage
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.pycoverage
+*.hypothesis/
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# JetBrains IDE (PyCharm)
+.idea/
+
+# MyPy type checking cache
+.mypy_cache/

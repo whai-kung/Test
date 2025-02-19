@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "log-monitoring"
+version = "0.1.0"
+description = ""
+authors = ["Whai kung <n.ratanasuwan@gmail.com>"]
+readme = "./README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+mypy = "^1.4.1"
+pytest = "^7.2.0"
+pytest-mock = "^3.10.0"
+pylint = "^2.17.4"
+isort = "^5.12.0"
+
+[tool.isort]
+profile = "black"
+skip_glob = ["vendored-libraries/*"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+force-exclude = "node_modules|vendored-libraries"

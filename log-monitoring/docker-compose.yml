@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    container_name: log-monitoring
+    working_dir: /app
+    volumes:
+      - .:/app
+    entrypoint: |
+      bash -c "cd /app
+      python -m venv venv
+      VIRTUAL_ENV_DISABLE_PROMPT=1 source venv/bin/activate venv
+      poetry install --with dev --sync
+      dmypy start
+      cd /app
+      /bin/bash"

@@ -1,0 +1,14 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS Trash and metadata
+._*
+
+# VS Code settings
+.vscode/
+
+# macOS Finder Thumbnails
+.TemporaryItems/
+.Trashes/
